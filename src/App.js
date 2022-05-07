@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 function App() {
   const [links, setLinks] = useState(["about", "portfolio", "contact"]);
@@ -19,6 +20,7 @@ function App() {
       <main>
         <About />
         <Portfolio />
+        <Contact />
       </main>
       <Footer />
     </>
