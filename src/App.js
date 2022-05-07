@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav";
+import About from "./components/About";
 import Footer from "./components/Footer";
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
         currentLink={currentLink}
         setCurrentLink={setCurrentLink}
       />
-      <main></main>
+      <main>
+        <About />
+      </main>
       <Footer />
     </>
   );
