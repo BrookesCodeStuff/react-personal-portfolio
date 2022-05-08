@@ -16,10 +16,10 @@ function About() {
       </p>
 
       <p>
-        When I'm not coding, I like to play video games, watch shows and movies,
-        take my dog Zeus for walks, and play D&D with my friends. Some of my
-        favorite things are Pokemon, Marvel (sorry, DC), loose leaf tea, coffee,
-        owls, and Halloween.
+        When I'm not coding, I like to play video games, binge Netflix, take my
+        dog Zeus for walks, and play D&D with my friends. Some of my favorite
+        things are Pokemon, Marvel (sorry, DC), loose leaf tea, coffee, owls,
+        and Halloween.
       </p>
     </div>
   );
