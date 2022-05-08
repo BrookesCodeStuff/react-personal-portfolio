@@ -6,4 +6,8 @@
   body {
     @apply bg-gray-600 bg-fixed bg-center bg-cover bg-page-background bg-blend-multiply;
   }
+
+  p {
+    @apply py-2;
+  }
 }
