@@ -5,18 +5,19 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <BrowserRouter>
+      <Nav />
       <Routes>
-        <Route path="/" element={<Nav />}>
-          <Route index element={<About />} />
-          <Route path="Portfolio" element={<Portfolio />} />
-          <Route path="Contact" element={<Contact />} />
-          <Route path="Resume" element={<Resume />} />
-        </Route>
+        <Route path="/" element={<About />} />
+        <Route path="Portfolio" element={<Portfolio />} />
+        <Route path="Contact" element={<Contact />} />
+        <Route path="Resume" element={<Resume />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

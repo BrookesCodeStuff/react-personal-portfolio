@@ -3,9 +3,9 @@ import React, { useState } from "react";
 function Contact() {
   const [errorMessage, setErrorMessage] = useState("");
   const [formState, setFormState] = useState({
-    name: "Your Name",
-    email: "Your Email",
-    message: "Your Message...",
+    name: "",
+    email: "",
+    message: "",
   });
   const { name, email, message } = formState;
 
