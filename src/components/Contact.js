@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { validateEmail, capitalize } from "../utils/helpers";
 
 function Contact() {
   const [errorMessage, setErrorMessage] = useState("");
@@ -19,7 +20,7 @@ function Contact() {
       }
     } else {
       if (!event.target.value.length) {
-        setErrorMessage(`${event.target.name} is required.`);
+        setErrorMessage(`${capitalize(event.target.name)} is required.`);
       } else {
         setErrorMessage("");
       }
@@ -35,12 +36,6 @@ function Contact() {
     console.log(formState);
   }
 
-  function validateEmail(email) {
-    var re =
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-  }
-
   return (
     <form
       className="flex flex-col md:w-1/2 mx-auto mt-8 justify-center content-center"
@@ -51,7 +46,6 @@ function Contact() {
         <input
           type="text"
           defaultValue={name}
-          id="name"
           name="name"
           className="p-1 rounded-sm caret-slate-900 w-full"
           onBlur={handleChange}
@@ -63,9 +57,9 @@ function Contact() {
         <input
           type="text"
           name="email"
-          id="email"
           defaultValue={email}
           className="rounded-sm p-1 w-full"
+          onBlur={handleChange}
         />
       </div>
       <div className="my-2">
@@ -75,7 +69,9 @@ function Contact() {
           rows="5"
           name="message"
           defaultValue={message}
-          className="rounded-sm p-1 w-full"></textarea>
+          className="rounded-sm p-1 w-full"
+          onBlur={handleChange}
+        />
       </div>
       {errorMessage && (
         <div>
