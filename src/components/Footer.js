@@ -5,7 +5,7 @@ import { ReactComponent as TwitterLogo } from "../assets/icons/twitter.svg";
 
 function Footer() {
   return (
-    <footer className="w-100 flex justify-around">
+    <footer className="flex justify-around">
       <a
         href="https://github.com/brookescodestuff"
         target="_blank"

@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <div className="flex flex-col h-screen z-1">
         <Nav />
-        <div className="w-3/4 flex-grow opacity-95 bg-gray-800 text-gray-300 mx-auto p-4 mb-auto">
+        <div className="w-3/4 md:w-1/2 flex-grow opacity-95 bg-gray-800 text-gray-300 mx-auto p-4 mb-auto">
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="Portfolio" element={<Portfolio />} />
@@ -20,7 +20,7 @@ function App() {
             <Route path="Resume" element={<Resume />} />
           </Routes>
         </div>
-        <div className="p-4 bg-gray-800">
+        <div className="p-4 bg-gray-800 w-full">
           <Footer />
         </div>
       </div>
