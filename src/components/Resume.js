@@ -5,9 +5,10 @@ function Resume() {
     <div>
       <div className="text-center">
         <a
-          href="/assets/pdf/Brooke Paglia Resume.pdf"
+          href={`${process.env.PUBLIC_URL}/assets/pdf/Brooke Paglia Resume.pdf`}
           target="_blank"
-          className="hover:underline text-lg">
+          className="hover:underline text-lg"
+          rel="noreferrer">
           Download my resume
         </a>
       </div>

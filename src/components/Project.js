@@ -8,7 +8,7 @@ function Project(props) {
       <div
         className="w-96 h-64 m-2 shadow-md shadow-black rounded-md relative"
         style={{
-          backgroundImage: `url(/assets/images/${image})`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${image})`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
