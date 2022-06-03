@@ -39,6 +39,12 @@ function Portfolio() {
       repo: "https://github.com/BrookesCodeStuff/workday-scheduler",
       image: "workday.png",
     },
+    {
+      name: "BookSpace",
+      link: "https://github.com/BrookesCodeStuff/BookSpace",
+      repo: "https://book-space-app.herokuapp.com/",
+      link: "bookspace.png",
+    },
   ]);
 
   return (
